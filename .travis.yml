@@ -27,4 +27,4 @@ deploy:
   on:
     tags: true
     repo: limitlessv/test_pkg1
-    python: 2.7
+    python: 3.6
