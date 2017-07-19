@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """The setup script."""
-
+import versioneer
 from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
@@ -26,7 +26,8 @@ test_requirements = [
 
 setup(
     name='test_pkg1',
-    version='0.0.1',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description="Testing cookiecutter",
     long_description=readme + '\n\n' + history,
     author="Shmuel Maruani",

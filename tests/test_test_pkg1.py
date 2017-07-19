@@ -16,12 +16,17 @@ class TestTest_pkg1(unittest.TestCase):
 
     def setUp(self):
         """Set up test fixtures, if any."""
+        self.hello_message = "Hello, World!"
 
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
     def test_000_something(self):
         """Test something."""
+
+    def test_prints_hello(self):
+        output = cli.hello()
+        assert(output == self.hello_message)
 
     def test_command_line_interface(self):
         """Test the CLI."""
