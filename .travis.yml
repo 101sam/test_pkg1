@@ -3,6 +3,7 @@
 
 language: python
 python:
+  - 3.6
   - 3.5
   - 3.4
   - 3.3
@@ -22,7 +23,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: limitlessv
   password:
-    secure: PLEASE_REPLACE_ME
+    secure:
   on:
     tags: true
     repo: limitlessv/test_pkg1
